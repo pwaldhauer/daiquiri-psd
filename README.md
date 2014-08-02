@@ -2,6 +2,12 @@
 
 Takes an pds file as input and outputs the needed JSON to generate the gallery using [daiquiri](https://github.com/pwaldhauer/daiquiri)
 
+## Installation
+
+`sudo npm install -g daiquiri-psd`
+
+(Or clone this repo)
+
 ## Usage
 
 - Create your gallery layout in Photoshop:
@@ -19,3 +25,7 @@ Takes an pds file as input and outputs the needed JSON to generate the gallery u
 ## Todo
 
 - Support for text blocks
+
+## License
+
+MIT
