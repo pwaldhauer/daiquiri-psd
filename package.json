@@ -16,10 +16,14 @@
     "psd": "x.x",
     "yargs": "x.x"
   },
-  "author": {
-    "name": "Philipp Waldhauer",
-    "email": "ich@philippwaldhauer.de",
-    "url": "http://knuspermagier.de"
+  "author": "Philipp Waldhauer <ich@philippwaldhauer.de> (http://knuspermagier.de)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pwaldhauer/daiquiri-psd/issues"
   },
-  "license": "MIT"
+  "homepage": "https://github.com/pwaldhauer/daiquiri-psd",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }

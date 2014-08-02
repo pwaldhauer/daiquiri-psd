@@ -8,6 +8,8 @@ var argv = require('yargs')
     .usage('Usage: $0 -o [path-to-json] [path-to-psd]')
     .demand(1)
     .demand(['o'])
+    .alias('o', 'output')
+    .describe('o', 'Path to output json file')
     .argv;
 
 var PSD = require('psd');
@@ -38,7 +40,7 @@ _.each(all_sections, function(section) {
 
     _.each(all_boxes, function(box) {
         if(box.type != 'group' || !_.contains(group_types, box.name) || box.children().length === 0) {
-            console.log('Ignoring group: ' + box.name);
+            console.log('Ignoring group: ' + box.name + '(' + box.type + ')');
             return;
         }
 
