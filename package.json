@@ -1,12 +1,25 @@
 {
-    "name": "psdtest",
-    "version": "0.0.0",
-    "description": "",
-    "main": "app.js",
-    "dependencies": {
-        "underscore": "x.x",
-        "async": "x.x"
-    },
-    "author": "Philipp Waldhauer",
-    "license": "MIT"
+  "name": "daiquiri-psd",
+  "version": "1.0.0",
+  "description": "Convert psds to daiquiri jsons",
+  "main": "app.js",
+  "bin": {
+    "daiquiri-psd": "app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pwaldhauer/daiquiri-psd.git"
+  },
+  "dependencies": {
+    "underscore": "x.x",
+    "async": "x.x",
+    "psd": "x.x",
+    "yargs": "x.x"
+  },
+  "author": {
+    "name": "Philipp Waldhauer",
+    "email": "ich@philippwaldhauer.de",
+    "url": "http://knuspermagier.de"
+  },
+  "license": "MIT"
 }
