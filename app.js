@@ -22,7 +22,7 @@ var sections = [];
 psd.parse();
 
 var all_sections = _.sortBy(psd.tree().children(), function(section) {
-    return -1 * section.top;
+    return section.top;
 });
 
 _.each(all_sections, function(section) {
@@ -33,7 +33,7 @@ _.each(all_sections, function(section) {
     }
 
     var all_boxes =  _.sortBy(section.children(), function(box) {
-        return -1 * box.top;
+        return box.top;
     });
 
     var boxes = [];
@@ -41,11 +41,12 @@ _.each(all_sections, function(section) {
     _.each(all_boxes, function(box) {
         if(box.type != 'group' || !_.contains(group_types, box.name) || box.children().length === 0) {
             console.log('Ignoring group: ' + box.name + '(' + box.type + ')');
+
             return;
         }
 
         var all_children = _.sortBy(box.children(), function(layer) {
-            return -1 * layer.left
+            return layer.left
         });
 
         var files = [];
