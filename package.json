@@ -1,6 +1,6 @@
 {
   "name": "daiquiri-psd",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert psds to daiquiri jsons",
   "main": "app.js",
   "bin": {
