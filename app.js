@@ -61,7 +61,8 @@ _.each(all_sections, function(section) {
         })
 
         boxes.push({
-            type: box.name,
+            type: 'image',
+            size: box.name,
             media: files
         });
     })
