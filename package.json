@@ -1,6 +1,6 @@
 {
   "name": "daiquiri-psd",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Convert psds to daiquiri jsons",
   "main": "app.js",
   "bin": {
@@ -13,7 +13,7 @@
   "dependencies": {
     "underscore": "x.x",
     "async": "x.x",
-    "psd": "x.x",
+    "psd": "git://github.com/meltingice/psd.js.git#4a810737687302ba441fe07bb277bbac58a99b86",
     "yargs": "x.x"
   },
   "author": "Philipp Waldhauer <ich@philippwaldhauer.de> (http://knuspermagier.de)",
